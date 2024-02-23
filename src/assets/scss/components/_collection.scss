@@ -1,0 +1,17 @@
+.collection {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.collection-text {
+    line-height: 1.5rem;
+}
+
+.collection-img {
+    object-fit: cover;
+    width: 100%;
+}

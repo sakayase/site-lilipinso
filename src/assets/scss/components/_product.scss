@@ -1,0 +1,32 @@
+@use '../token';
+
+.product {
+    font-family: 'futura-medium';
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.product-price {
+    margin-top: 1rem;
+}
+
+.product-oldprice {
+    color: token.$grey;
+    margin-right: 1rem;
+    text-decoration: line-through;
+}

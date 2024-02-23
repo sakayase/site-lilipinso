@@ -1,0 +1,21 @@
+@use '../token';
+
+header {
+    font-family: 'futura-light';
+    font-size: 0.7rem;
+    background-color: token.$black;
+    color: token.$grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-style: italic;
+}
+
+.header-nav-ul {
+    display: flex;
+}
+
+.header-nav-a {
+    color: token.$grey;
+    padding: 0.5rem;
+}

@@ -1,0 +1,31 @@
+.main-nav, .main-nav-left, .main-nav-center, .main-nav-right {
+    font-family: 'sofiapro-normal';
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.main-nav-spacer {
+    width: 20px;
+}
+
+.main-nav-active {
+    text-decoration: underline;
+}
+
+.main-nav-link {
+    text-transform: uppercase;
+    margin: 15px;
+}
+
+.main-nav-right {
+    width: 150px;
+}
+
+.main-nav-right-icon {
+    align-self: center;
+}

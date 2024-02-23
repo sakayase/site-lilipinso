@@ -1,0 +1,12 @@
+@use '../token';
+
+button {
+    padding: 0.7rem 1.5rem;
+    text-transform: uppercase;
+    color: token.$white;
+    background-color: token.$black;
+    border: none;
+    font-family: 'futura-light';
+    letter-spacing: 0.1rem;
+    font-size: 0.5rem;
+}

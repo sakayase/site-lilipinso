@@ -1,0 +1,441 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  font-family: "futura-light";
+  font-size: 0.7rem;
+  background-color: black;
+  color: #D2D2D2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.header-nav-ul {
+  display: flex;
+}
+
+.header-nav-a {
+  color: #D2D2D2;
+  padding: 0.5rem;
+}
+
+.main-nav, .main-nav-left, .main-nav-center, .main-nav-right {
+  font-family: "sofiapro-normal";
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.main-nav-spacer {
+  width: 20px;
+}
+
+.main-nav-active {
+  text-decoration: underline;
+}
+
+.main-nav-link {
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+.main-nav-right {
+  width: 150px;
+}
+
+.main-nav-right-icon {
+  align-self: center;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: "futura-light";
+  letter-spacing: 0.1rem;
+  font-size: 0.5rem;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  height: 400px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-btn {
+  position: absolute;
+  top: 65%;
+  left: 63%;
+}
+
+.sec-banner {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+}
+
+.sec-banner-container {
+  position: relative;
+  object-fit: cover;
+}
+
+.sec-banner-img {
+  width: 100%;
+}
+
+.sec-banner-spacer {
+  width: 1rem;
+}
+
+.sec-banner-container-text {
+  position: absolute;
+  font-family: "futura-medium";
+  font-size: 0.8rem;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.sec-banner-title {
+  padding-bottom: 10px;
+}
+
+.sec-banner-link {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.sec-nav {
+  border-width: 1px;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #D2D2D2;
+  display: flex;
+  margin-bottom: 3rem;
+}
+.sec-nav li {
+  margin-top: -2px;
+  margin-bottom: -2px;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: transparent;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  color: #D2D2D2;
+  padding: 0.5rem;
+  margin-right: 2rem;
+}
+.sec-nav .active {
+  border-color: black;
+}
+
+.product {
+  font-family: "futura-medium";
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-img {
+  height: 350px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.product-price {
+  margin-top: 1rem;
+}
+
+.product-oldprice {
+  color: #D2D2D2;
+  margin-right: 1rem;
+  text-decoration: line-through;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+}
+
+.collection-text {
+  line-height: 1.5rem;
+}
+
+.collection-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.promo {
+  margin: 3rem 0;
+  display: flex;
+}
+.promo .separator {
+  margin-bottom: 2rem;
+}
+
+.promo-text-container {
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+.promo-text {
+  margin-bottom: 2rem;
+}
+
+.share {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.share .separator {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.advantages {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.advantages-desc {
+  font-size: 0.7rem;
+}
+
+footer {
+  position: relative;
+}
+footer img {
+  width: 100%;
+}
+footer div {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 500px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-list-title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+footer li {
+  margin-bottom: 0.5rem;
+}
+
+@font-face {
+  font-family: "futura-normal";
+  src: url("../fonts/futura_book_font-webfont.woff") format("woff"), url("../fonts/futura_book_font-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura-light";
+  src: url("../fonts/futura-light-webfont.woff") format("woff"), url("../fonts/futura-light-webfont.woff2") format("woff2");
+  font-weight: light;
+  font-style: light;
+}
+@font-face {
+  font-family: "futura-medium";
+  src: url("../fonts/futura_medium_bt-webfont.woff") format("woff"), url("../fonts/futura_medium_bt-webfont.woff2") format("woff2");
+  font-weight: medium;
+  font-style: medium;
+}
+@font-face {
+  font-family: "sofiapro-semibold";
+  src: url("../fonts/sofia_pro_semibold-webfont.woff") format("woff"), url("../fonts/sofia_pro_semibold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "sofiapro-normal";
+  src: url("../fonts/sofia_pro_regular-webfont.woff") format("woff"), url("../fonts/sofia_pro_regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "sofiapro-light";
+  src: url("../fonts/sofia-pro-light-webfont.woff") format("woff"), url("../fonts/sofia-pro-light-webfont.woff2") format("woff2");
+  font-weight: light;
+  font-style: light;
+}
+@font-face {
+  font-family: "nimbus";
+  src: url("../fonts/nimbusromno9l-regita-webfont.woff") format("woff"), url("../fonts/nimbusromno9l-regita-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nimbus-sans-l";
+  src: url("../fonts/nimbus-sans-l.regular-webfont.woff") format("woff"), url("../fonts/nimbus-sans-l.regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "futura-normal";
+  font-weight: normal;
+}
+
+main {
+  max-width: 1400px;
+  min-width: 1000px;
+  margin: auto;
+}
+
+.main-div {
+  padding: 0 3rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "sofiapro-semibold";
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-family: "futura-medium";
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-family: "futura-normal";
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1.1rem;
+  margin: 3rem 0 2rem 0;
+}
+
+h4 {
+  font-family: "nimbus";
+  font-size: 2rem;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-family: "nimbus-sans-l";
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  font-family: "futura-medium";
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.separator {
+  width: 50px;
+  border-top: solid;
+  height: 0px;
+  align-self: center;
+  margin: 1rem 0;
+}
+
+.horizontal-separator {
+  border: solid;
+  border-width: 1px;
+  border-color: #D2D2D2;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,160 @@
+@use 'reset';
+@use 'token';
+@use 'components/header';
+@use 'components/main-nav';
+@use 'components/button';
+@use 'components/banner';
+@use 'components/sec-banner';
+@use 'components/sec-nav';
+@use 'components/product';
+@use 'components/collection';
+@use 'components/promo';
+@use 'components/share';
+@use 'components/advandages';
+@use 'components/footer';
+
+@font-face {
+    font-family: 'futura-normal';
+    src: url('../fonts/futura_book_font-webfont.woff') format('woff'),
+         url('../fonts/futura_book_font-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura-light';
+    src: url('../fonts/futura-light-webfont.woff') format('woff'),
+         url('../fonts/futura-light-webfont.woff2') format('woff2');
+    font-weight: light;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'futura-medium';
+    src: url('../fonts/futura_medium_bt-webfont.woff') format('woff'),
+         url('../fonts/futura_medium_bt-webfont.woff2') format('woff2');
+    font-weight: medium;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'sofiapro-semibold';
+    src: url('../fonts/sofia_pro_semibold-webfont.woff') format('woff'),
+         url('../fonts/sofia_pro_semibold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'sofiapro-normal';
+    src: url('../fonts/sofia_pro_regular-webfont.woff') format('woff'),
+         url('../fonts/sofia_pro_regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofiapro-light';
+    src: url('../fonts/sofia-pro-light-webfont.woff') format('woff'),
+         url('../fonts/sofia-pro-light-webfont.woff2') format('woff2');
+    font-weight: light;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'nimbus';
+    src: url('../fonts/nimbusromno9l-regita-webfont.woff') format('woff'),
+         url('../fonts/nimbusromno9l-regita-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus-sans-l';
+    src: url('../fonts/nimbus-sans-l.regular-webfont.woff') format('woff'),
+         url('../fonts/nimbus-sans-l.regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: 'futura-normal';
+    font-weight: normal;
+}
+
+main {
+    max-width: 1400px;
+    min-width: 1000px;
+    margin: auto;
+}
+
+.main-div {
+    padding: 0 3rem ;
+}
+
+a {
+    color: token.$black;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'sofiapro-semibold';
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+h2 {
+    font-family: 'futura-medium';
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+}
+
+h3 {
+    font-family: 'futura-normal';
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+    margin: 3rem 0 2rem 0;
+}
+
+h4 {
+    font-family: 'nimbus';
+    font-size: 2rem;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-family: 'nimbus-sans-l';
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+h6 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-family: 'futura-medium';
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.separator {
+    width: 50px;
+    border-top: solid;
+    height: 0px;
+    align-self: center;
+    margin: 1rem 0;
+}
+
+.horizontal-separator {
+    border: solid;
+    border-width: 1px;
+    border-color: token.$grey;
+}

@@ -1,0 +1,25 @@
+@use '../token';
+
+.sec-nav {
+    border-width: 1px;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: token.$grey;
+    display: flex;
+    margin-bottom: 3rem;
+    li {
+        margin-top: -2px;
+        margin-bottom: -2px;
+        border-top: solid;
+        border-bottom: solid;
+        border-color: transparent;
+        font-size: 0.5rem;
+        text-transform: uppercase;
+        color: token.$grey;
+        padding: 0.5rem;
+        margin-right: 2rem;
+    }
+    .active {
+        border-color: token.$black;
+    }
+}
